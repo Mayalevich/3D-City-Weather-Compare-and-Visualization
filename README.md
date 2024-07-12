@@ -24,20 +24,20 @@ You can install the required libraries using the following command:
 pip install requests matplotlib numpy
 ```
 
-## Setup
+## main
 
-1. Clone the repository or download the `setup.py` file to your local machine.
+1. Clone the repository or download the `main.py` file to your local machine.
 
 2. Sign up for an OpenWeatherMap API key if you don't already have one. You can get it from [OpenWeatherMap](https://openweathermap.org/api).
 
-3. Replace `'your_actual_openweathermap_api_key'` in the `setup.py` file with your actual OpenWeatherMap API key.
+3. Replace `'your_actual_openweathermap_api_key'` in the `main.py` file with your actual OpenWeatherMap API key.
 
 ## Usage
 
-1. Run the `setup.py` script:
+1. Run the `main.py` script:
 
    ```sh
-   python setup.py
+   python main.py
    ```
 
 2. Enter the city names separated by commas when prompted. For example:
