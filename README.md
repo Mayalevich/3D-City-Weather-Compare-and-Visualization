@@ -30,7 +30,7 @@ pip install requests matplotlib numpy
 
 2. Sign up for an OpenWeatherMap API key if you don't already have one. You can get it from [OpenWeatherMap](https://openweathermap.org/api).
 
-3. Replace `'your_actual_openweathermap_api_key'` in the `main.py` file with your actual OpenWeatherMap API key.
+3. Replace `your_api_key` in the `main.py` file with your actual OpenWeatherMap API key.
 
 ## Usage
 
