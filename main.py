@@ -5,13 +5,13 @@ from mpl_toolkits.mplot3d import Axes3D
 import tkinter as tk
 from tkinter import simpledialog, messagebox
 
-# Function to fetch real-time weather data
+
 def fetch_weather_data(api_key, city):
     url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}"
-    print(f"Using URL: {url}")  # Debugging: Print URL
+    print(f"Using URL: {url}")
     try:
         response = requests.get(url)
-        response.raise_for_status()  # Check if the request was successful
+        response.raise_for_status()
         return response.json()
     except requests.exceptions.HTTPError as err:
         print(f"HTTP error occurred for {city}: {err}")
@@ -37,7 +37,7 @@ def create_3d_bar_chart(city_data):
     fig = plt.figure()
     ax = fig.add_subplot(111, projection='3d')
 
-    # Data for bars
+    
     parameters = ['Temperature (°C)', 'Humidity (%)', 'Wind Speed (m/s)']
     parameter_indices = np.arange(len(parameters))
     city_colors = plt.get_cmap('tab10')
@@ -135,6 +135,5 @@ def main():
         else:
             messagebox.showerror("Data Error", "No valid data to display. Please check the city names and try again.")
 
-# Run the main function
 if __name__ == "__main__":
     main()
