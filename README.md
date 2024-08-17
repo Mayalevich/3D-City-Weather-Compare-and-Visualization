@@ -1,5 +1,6 @@
 # 3D-City-Weather-Compare-and-Visualization
 This Python project visualizes weather data for multiple cities in a 3D bar chart. Users can input city names, and the program fetches real-time weather data for those cities using the OpenWeatherMap API. The visualization includes temperature, humidity, and wind speed parameters for each city.
+Video Description:https://youtu.be/YSXGGjW6eDs
 
 ## Features
 
